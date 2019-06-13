@@ -1,0 +1,9 @@
+#input your name
+name = input("What is your name: ")
+
+#input your age
+age = input("Tell us your age: ")
+age = int(age)
+
+#print name and age by 2019
+print(name + " will be 100 years by " + str(2119-age))
