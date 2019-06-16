@@ -1,0 +1,11 @@
+__author__ = 'Ogbeniwole'
+
+string = input("Enter a word: ")
+
+forwards = string[:]
+backwards = string[-1::-1]
+
+if forwards == backwards:
+    print("The word", string, "is a palindrome")
+else:
+    print("This word", string, "is not a palindrome")
