@@ -1,0 +1,17 @@
+__author__ = 'Ogbeniwole'
+
+import random as rand
+
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+com_elem1 = [num for num in a and b if num in a and b]
+
+print(com_elem1)
+
+c = rand.sample(range(100), 10)
+d = rand.sample(range(100), 10)
+
+com_elem2 = [num for num in c and d if num in c and d]
+
+print(com_elem2)
