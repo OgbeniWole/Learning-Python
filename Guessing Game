@@ -1,0 +1,24 @@
+__author__ = 'Ogbeniwole'
+
+import random as rand
+
+rand_num = rand.randint(1, 6)
+count = 0
+
+while True:
+    count += 1
+    user_input = int(input("Guess a number between 1 and 6: "))
+    if user_input < rand_num:
+        print("Your guess is too low")
+    elif user_input > rand_num:
+        print("Your guess is too high")
+    elif user_input == rand_num:
+        print("Your guess is exact")
+        print("You had", count, "guesses")
+        break
+
+    user_input = input("type exit to quit or enter to continue: ")
+
+    if user_input == "exit":
+        print("You had", count, "guess(es)")
+        break
