@@ -1,0 +1,24 @@
+__author__ = 'Ogbeniwole'
+
+
+def get_number():
+    return int(input("Enter a number: "))
+
+
+user_input = get_number()
+user_range = range(1, user_input)
+divisor_range = []
+
+for i in user_range:
+    if user_input % i == 0:
+        divisor_range.append(i)
+
+
+def prime():
+    if len(divisor_range) == 1:
+        return "This number is prime"
+    else:
+        return "This number is not prime"
+
+
+print(prime())
