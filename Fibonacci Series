@@ -1,0 +1,21 @@
+__author__ = 'Ogbeniwole'
+
+
+def getnum(number = "How many fibonacci series do you want to generate: "):
+    return int(input(number))
+
+
+user_input = getnum()
+user_range = range(1, user_input, 1)
+
+fib_list = [1, 1]
+
+
+def fibo():
+    for i in user_range:
+        y = fib_list[i-1] + fib_list[i]
+        fib_list.append(y)
+    return fib_list
+
+
+print(fibo())
